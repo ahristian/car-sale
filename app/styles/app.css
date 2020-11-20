@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+button {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #016aba;
+  text-decoration: none;
+}
+
+button {
+  font-size: 100%;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/*** Button ****/
+
+.button {
+  padding: 0.8rem 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: #016aba;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  display: inline-block;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/*** Top Navigation */
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/************* Index page ************/
+.index-background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),url(../assets/images/tesla-model3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.title-index h2 {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  text-align: center;
+  color: #cdcbcb;
+  font-weight: lighter;
+
+}
+
+/***** About-us ********/
+
+.about-us h2 {
+  margin: 2rem;
+}
+
+/******* Contact *******/
+
+.contact h2 {
+  margin: 2rem;
+}
+
+/**** Inventory ******/
+
+.car-items label span {
+  font-size: 140%;
+  margin: 50px auto 20px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+.car-items input {
+  padding: 11px;
+  font-size: 18px;
+  width: 500px;
+  margin: 20px auto 50px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: solid 1px lightgray;
+  display: block;
+}
+
+.menu input:focus {
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.menu button {
+  margin-right: 15px;
+  position: relative;
+  top: -1px;
+  left: -5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #262626;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.menu button:hover {
+  background-color: #111;
+  opacity: 1;
+}
+
+.menu .results {
+  display: none;
+  position: absolute;
+  width: 215px;
+  top: 54px;
+  left: 10px;
+  background-color: #f6f6f6;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.results {
+  margin-top: -10px;
+}
+
+.results li {
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.menu .results li:hover {
+  background: #f3f3f3;
+}
+
+/*** car-single-page ******/
+
+
+.car-item {
+  margin-top: 15px;
+  background-color: #f6f6f6;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.car-item:hover {
+  background-color: #f3f3f3;
+}
+
+.car-item img {
+  border-radius: 5px;
+}
+
+.car-item .image {
+  flex-grow: 0;
+  flex-basis: 150px;
+  margin: 20px 25px;
+  text-align: center;
+}
+
+.car-item button.image {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  z-index: 1;
+}
+
+.car-item button.image:focus {
+  outline: none;
+}
+
+.car-item button.image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin: -20px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #016aba;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.car-item button.image:focus:after, .car-item button.image:hover:after {
+  opacity: 0.1;
+}
+
+.car-item .image img {
+  max-width: 100%;
+}
+
+.car-item .image.large {
+  margin: 30px 25px 50px 25px;
+  flex-basis: 100%;
+}
+
+.car-item .image small {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: -15px;
+  text-align: center;
+  color: #016aba;
+
+  /* This is needed to fix a safari clipping issue */
+  position: relative;
+}
+
+.car-item .image.large small {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 110%;
+}
+
+.car-item .details {
+  flex-basis: 50%;
+  flex-grow: 2;
+  display: flex;
+  height: 150px;
+  margin: 20px 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.car-item h3 {
+  flex-basis: 100%;
+}
+
+.car-item h3 a {
+  display: inline;
+}
+
+.car-item .detail {
+  flex-basis: 50%;
+  font-weight: 300;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.car-item .detail span {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.car-item .map {
+  flex-grow: 0;
+  flex-basis: 150px;
+  font-size: 0;
+  margin: 0px 25px;
+}
+
+.car-item .map img {
+  width: 150px;
+  height: 150px;
+}
+
+.car-item.detailed {
+  background: none;
+  align-items: flex-start;
+}
+
+.car-item.detailed .image {
+  flex-basis: 320px;
+}
+
+.car-item.detailed .image.large {
+  margin: 30px 25px 50px 25px;
+  flex-basis: 100%;
+}
+
+.car-item.detailed .details {
+  height: auto;
+}
+
+.car-item.detailed h3 {
+  font-size: 200%;
+  margin-bottom: 10px;
+}
+
+.car-item.detailed .detail {
+  margin: 5px 0;
+  flex-basis: 100%;
+  flex-shrink: 2;
+}
+
+.car-item.detailed .description {
+  white-space: normal;
+  flex-basis: 100%;
+  flex-shrink: 1;
+}
+
+.car-item.detailed .map {
+  flex-basis: 100%;
+  margin: 50px 25px 25px 25px;
+}
+
+.car-item.detailed .map img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 919px) {
+  .car-item.detailed .image, .car-item.detailed .image.large {
+    margin: 30px 25px 25px 25px;
+    flex-basis: 100%;
+    cursor: default;
+  }
+
+  .car-item.detailed .image:hover {
+    flex-basis: 100%;
+    cursor: default;
+  }
+
+  .car-item.detailed .image small {
+    display: none;
+  }
+
+  .car-item.detailed button.image:hover:after {
+    opacity: 0;
+  }
+
+  .car-item.detailed button.image:focus:after {
+    opacity: 0.1;
+  }
+
+  .car-item.detailed .map {
+    margin-top: 25px;
+  }
+}
+
