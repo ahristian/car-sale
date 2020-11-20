@@ -1,27 +1,38 @@
 <article class="car-item">
-  <Car::Image
+  <div class="row">
+    <div class="col-md text-center">
+      <h3>{{@car.title}} </h3>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+  <img
           src={{@car.image}}
           alt="A picture of {{@car.title}}"
   />
+  </div>
   <div class="details">
-    <h3>{{@car.title}} </h3>
-    <div class="detail brand">
+    <div class="col-md-4 detail brand">
       <span>Brand:</span> {{@car.brand}}
     </div>
-    <div class="detail model">
+      <div class="col-md-4 detail model">
       <span>Model:</span> {{@car.model}}
     </div>
-    <div class="detail mileage">
+        <div class="col-md-4 detail year">
+      <span>Year:</span> {{@car.year}}
+    </div>
+    <div class="col-md-4 detail mileage">
       <span>Mileage:</span> {{@car.mileage}}
     </div>
-    <div class="detail color">
+    <div class="col-md-4 detail color">
       <span>Color:</span> {{@car.color}}
     </div>
-    <div class="detail description">
-      <span>Description:</span> {{@car.description}}
-    </div>
-    <div class="detail price">
+    <div class="col-md-4 detail price">
       <span>Price:</span> {{@car.price}}
     </div>
+    <div class="col-md-12 detail description">
+      <span>Description:</span> {{@car.description}}
+    </div>
+  </div>
   </div>
 </article>
