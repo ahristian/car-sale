@@ -1,0 +1,32 @@
+<NavBar/>
+<div class="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h2>The latest models at Albuquerque Car Sale.</h2>
+      </div>
+    </div>
+
+    <div class="car-items">
+      <ul class="results">
+        <li>
+          <Car @car={{@model}} />
+        </li>
+        <li>
+          <Car @car={{@model}} />
+        </li>
+        <li>
+          <Car @car={{@model}} />
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-">
+        <LinkTo @route="about" class="button">About Us</LinkTo>
+      </div>
+      <div class="col-md">
+        <LinkTo @route="contact" class="button">Contact Us</LinkTo>
+      </div>
+    </div>
+  </div>
+</div>
