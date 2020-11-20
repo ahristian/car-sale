@@ -16,5 +16,8 @@ export default class IndexRoute extends Route {
         'software updates adding functionality. Limited production of the Model 3 began in mid-2017, with the first ' +
         'production vehicle rolling off the assembly line on July 7, 2017.',
     };
+    let response = await fetch('/api/rentals.json');
+    let parsed = await response.json();
+    return parsed;
   }
 }

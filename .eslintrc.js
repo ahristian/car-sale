@@ -29,9 +29,9 @@ module.exports = {
         '.template-lintrc.js',
         'ember-cli-build.js',
         'testem.js',
-        'blueprints/*/index.js',
+        'blueprints/*/inventory.js',
         'config/**/*.js',
-        'lib/*/index.js',
+        'lib/*/inventory.js',
         'server/**/*.js'
       ],
       parserOptions: {

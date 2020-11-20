@@ -1,0 +1,27 @@
+<article class="car-item">
+  <Car::Image
+          src={{@car.image}}
+          alt="A picture of {{@car.title}}"
+  />
+  <div class="details">
+    <h3>{{@car.title}} </h3>
+    <div class="detail brand">
+      <span>Brand:</span> {{@car.brand}}
+    </div>
+    <div class="detail model">
+      <span>Model:</span> {{@car.model}}
+    </div>
+    <div class="detail mileage">
+      <span>Mileage:</span> {{@car.mileage}}
+    </div>
+    <div class="detail color">
+      <span>Color:</span> {{@car.color}}
+    </div>
+    <div class="detail description">
+      <span>Description:</span> {{@car.description}}
+    </div>
+    <div class="detail price">
+      <span>Price:</span> {{@car.price}}
+    </div>
+  </div>
+</article>
