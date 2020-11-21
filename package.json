@@ -61,6 +61,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "@types/ember__controller": "^3.16.4",
     "@types/ember__routing": "^3.16.9"
   }
 }
