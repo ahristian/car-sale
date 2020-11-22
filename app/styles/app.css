@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body,
@@ -47,7 +47,7 @@ p {
   background: #016aba;
   border-radius: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   opacity: 0.9;
   display: inline-block;
@@ -122,9 +122,9 @@ p {
 /*** car-single-page ******/
 
 .car-item {
-  margin-top: 2rem;
-  background-color: #e3e3e3;
-  padding: 1rem 0;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #ececec;
   justify-content: space-between;
   font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   align-items: center;
@@ -136,41 +136,12 @@ p {
 
 .car-item img {
   border-radius: 5px;
-  width: 15rem;
-  padding-left: 1rem;
-}
-
-.car-item .image img {
-  max-width: 100%;
-}
-
-.car-item .image small {
-  display: block;
-  text-align: center;
-
-  /* This is needed to fix a safari clipping issue */
-  position: relative;
-}
-
-.car-item .image.large small {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 110%;
-}
-
-.car-item .details {
-  flex-basis: 70%;
-  display: flex;
-  height: 10rem;
-  margin: 1rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-around;
+  width: 18rem;
 }
 
 .car-item .detail {
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
 
 }
 
