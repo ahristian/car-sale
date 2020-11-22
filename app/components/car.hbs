@@ -5,34 +5,41 @@
   </div>
   </div>
   <div class="row">
-  <div class="col-md-3">
+  <div class="col-xl-4 col-md-6 col-sm-12 col-lg-5 text-center">
+
   <img
           src={{@car.image}}
           alt="A picture of {{@car.title}}"
   />
   </div>
-  <div class="details">
-    <div class="col-md-4 detail brand">
+  <div class="col-md">
+<div class="row my-1">
+    <div class="col-md-3 detail brand">
       <span>Brand:</span> {{@car.brand}}
     </div>
-      <div class="col-md-4 detail model">
+      <div class="col-md-3 detail model">
       <span>Model:</span> {{@car.model}}
     </div>
-        <div class="col-md-4 detail year">
+        <div class="col-md-3 detail year">
       <span>Year:</span> {{@car.year}}
     </div>
-    <div class="col-md-4 detail mileage">
+    </div>
+    <div class="row my-1">
+    <div class="col-md-3 detail mileage">
       <span>Mileage:</span> {{@car.mileage}}
     </div>
-    <div class="col-md-4 detail color">
+    <div class="col-md-3 detail color">
       <span>Color:</span> {{@car.color}}
     </div>
-    <div class="col-md-4 detail price">
+    <div class="col-md-3 detail price">
       <span>Price:</span> {{@car.price}}
     </div>
-    <div class="col-md-12 detail description">
-      <span>Description:</span> {{@car.description}}
     </div>
+    <div class="row my-1">
+      <div class="col-md detail description">
+        <span>Description:</span> {{@car.description}}
+      </div>
+  </div>
   </div>
   </div>
 </article>
