@@ -11,5 +11,7 @@ Router.map(function () {
   this.route('contact', {path: '/contact-us'});
   this.route('post-car');
   this.route('cars');
-  this.route('vehicles');
+  this.route('vehicles', function() {
+    this.route('new');
+  });
 });
