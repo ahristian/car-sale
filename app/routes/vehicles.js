@@ -47,8 +47,11 @@ import Route from '@ember/routing/route';
     "description": "The 2020 Kia Sorento is a seven-seat SUV that is available in five trim levels: L, LX, S, EX Sport and SX. The L and the LX are reasonably well equipped, while the S and the EX add more convenience features. The SX trims top the range with more luxury-oriented features."
   }
 ];*/
-export default class VehiclesRoute extends Route {
-  async model () {
-    return this.store.findAll('car');
-    };
+export default class IndexRoute extends Route {
+  async model() {
+    let response = await fetch('cars.json');
+    let { cars } = await response.json();
+    return cars ;
+
+  }
 }
