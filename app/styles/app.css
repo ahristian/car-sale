@@ -124,7 +124,7 @@ p {
 .car-item {
   margin: 3rem 0;
   padding: 2rem;
-  background-color: #ececec;
+  border: 1px black solid;
   justify-content: space-between;
   font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   align-items: center;

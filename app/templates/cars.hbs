@@ -1,20 +1,18 @@
-<div class="about-us">
+
+<div class="cars">
   <div class="container-fluid other-pages-background">
     <div class="row">
       <div class="col-md text-center">
-        <h2>The latest models at Albuquerque Car Sale.</h2>
+        <h2>Cars</h2>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="car-items">
       <ul class="results">
-        <li>
-          {{#each @model as |car|}}
-            <li><Car @car={{car}} /></li>
-          {{/each}}
-        </li>
-
+        {{#each @model as |car|}}
+          <li><Car @car={{car}} /></li>
+        {{/each}}
       </ul>
     </div>
     <div class="row">

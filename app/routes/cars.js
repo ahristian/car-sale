@@ -6,7 +6,7 @@ const COMMUNITY_CATEGORIES = [
 
 export default class IndexRoute extends Route {
   async model() {
-    let response = await fetch('/cars-in-stock.json');
+    let response = await fetch('/cars.json');
     let { data } = await response.json();
 
     return data.map(model => {
