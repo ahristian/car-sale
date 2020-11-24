@@ -1,7 +1,7 @@
 <article class="car-item">
   <div class="row">
     <div class="col-md text-center">
-      <h3>{{@car.title}} </h3>
+      <h3>{{@car.brand}} {{@car.model}} for {{@car.price}}</h3>
     </div>
   </div>
   <div class="row">
@@ -9,35 +9,45 @@
 
       <img
               src={{@car.image}}
-              alt="A picture of {{@car.title}}"
-      />
+              alt="An image of {{@car.brand}} {{@car.model}}"/>
     </div>
     <div class="col-md">
       <div class="row my-1">
-        <div class="col-md-3 detail brand">
+        <div class="col-md-4 detail brand">
           <span>Brand:</span> {{@car.brand}}
         </div>
-        <div class="col-md-3 detail model">
+        <div class="col-md-4 detail model">
           <span>Model:</span> {{@car.model}}
         </div>
-        <div class="col-md-3 detail year">
+        <div class="col-md-4 detail year">
           <span>Year:</span> {{@car.year}}
         </div>
       </div>
       <div class="row my-1">
-        <div class="col-md-3 detail mileage">
+        <div class="col-md-4 detail mileage">
           <span>Mileage:</span> {{@car.mileage}}
         </div>
-        <div class="col-md-3 detail color">
+        <div class="col-md-4 detail color">
           <span>Color:</span> {{@car.color}}
         </div>
-        <div class="col-md-3 detail price">
+        <div class="col-md-4 detail price">
           <span>Price:</span> {{@car.price}}
         </div>
       </div>
       <div class="row my-1">
         <div class="col-md detail description">
           <span>Description:</span> {{@car.description}}
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-4 detail mileage">
+          <span>Contact:</span> {{@car.name}}
+        </div>
+        <div class="col-md-4 detail color">
+          <span>Phone:</span> {{@car.phone}}
+        </div>
+        <div class="col-md-4 detail price">
+          <span>Email:</span> {{@car.email}}
         </div>
       </div>
     </div>

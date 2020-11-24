@@ -1,27 +1,30 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'car-sale',
-    environment,
-    rootURL: '/',
-    locationType: 'auto',
-    EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
+      modulePrefix: 'car-sale',
+      environment,
+      rootURL: '/',
+      locationType: 'auto',
+      EmberENV: {
+        FEATURES: {
+          // Here you can enable experimental features on an ember canary build
+          // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+        }
+        ,
+        EXTEND_PROTOTYPES: {
+          // Prevent Ember Data from overriding Date.parse.
+          Date: false
+        }
       }
-    },
+      ,
 
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      APP: {
+        // Here you can pass flags/options to your application instance
+        // when it is created
+      }
     }
-  };
+  ;
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -47,7 +50,8 @@ module.exports = function(environment) {
     // here you can enable a production-specific feature
   }
 
-        ENV.MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYWhyaXN0aWFuIiwiYSI6ImNraHA2em1xZjBhbXoyc21zb2h6aG5jMWwifQ.TUTafDjrLDZ2X79fuoEVXg'
+  ENV.MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYWhyaXN0aWFuIiwiYSI6ImNraHA2em1xZjBhbXoyc21zb2h6aG5jMWwifQ.TUTafDjrLDZ2X79fuoEVXg'
 
   return ENV;
-};
+}
+;
