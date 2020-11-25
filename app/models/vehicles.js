@@ -1,15 +1,14 @@
-import DS from 'ember-data';
+import Model, { attr } from '@ember-data/model';
 
-let attr = DS.attr;
+export default class VehicleModel extends Model {
+  @attr('string') brand;
+  @attr('string') model;
+  @attr('number') year;
+  @attr('number') mileage;
+  @attr('string') color;
+  @attr('string') image;
+  @attr('number') price;
+  @attr('string') description;
+}
 
-export default DS.Model.extend({
-  brand: attr('string'),
-  model: attr('string'),
-  year: attr('string'),
-  mileage: attr('string'),
-  color: attr('string'),
-  image: attr('string'),
-  price: attr('string'),
-  description: attr('string'),
 
-});
