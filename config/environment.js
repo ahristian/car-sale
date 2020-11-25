@@ -3,7 +3,9 @@
 module.exports = function (environment) {
   let ENV = {
       modulePrefix: 'car-sale',
-      environment,
+    environment: environment,
+    /*contentSecurityPolicy:{'connect-src': "'self' wss://!*.firebaseio.com"},
+    firebase: 'https://car-sale-261c7.firebaseio.com',*/
       rootURL: '/',
       locationType: 'auto',
       EmberENV: {

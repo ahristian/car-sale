@@ -18,6 +18,5 @@ export default Ember.Controller.extend({
         phone: this.get('phone')
       });
       newCar.save();
-      self.transitionTo('vehicles');
     }}
 });
