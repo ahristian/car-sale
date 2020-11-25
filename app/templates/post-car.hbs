@@ -5,7 +5,12 @@
   <form {{action "submitCar" on="submit"}} class="contact-form container">
     <div class="row pt-4">
       <div class="col-lg">
-
+        <div class="input-group mt-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Post Id:</span>
+          </div>
+          {{input type="text" value=id class="form-control"}}
+        </div>
         <div class="input-group mt-4">
           <div class="input-group-prepend">
             <span class="input-group-text">Car Brand:</span>

@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions:{
     submitCar: function() {
-      let newCar = this.store.createRecord('car',{
-        date: this.get('date'),
+      let newCar = this.store.createRecord('vehicle',{
+        id: this.get('id'),
         brand: this.get('brand'),
         model: this.get('model'),
         year: this.get('year'),
@@ -12,12 +12,12 @@ export default Ember.Controller.extend({
         color: this.get('color'),
         image: this.get('image'),
         price: this.get('price'),
+        description: this.get('description'),
         name: this.get('name'),
         email: this.get('email'),
-        phone: this.get('phone'),
-
+        phone: this.get('phone')
       });
       newCar.save();
-      self.transitionTo('cars');
+      self.transitionTo('vehicles');
     }}
 });

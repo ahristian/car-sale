@@ -1,8 +1,6 @@
 {
   "vehicles": [
     {
-      "id": 4,
-      "type": "car",
       "brand": "Toyota",
       "model": "Camry",
       "year": "2013",
@@ -16,8 +14,6 @@
       "email": "charles@gmail.com"
     },
     {
-      "id": 1,
-      "type": "car",
       "brand": "Tesla",
       "model": "Model",
       "year": "2020",
@@ -31,8 +27,6 @@
       "email": "brandon@gmail.com"
     },
     {
-      "id": 2,
-      "type": "car",
       "brand": "Audi",
       "model": "Q5",
       "year": "2019",
@@ -46,8 +40,6 @@
       "email": "kylie@gmail.com"
     },
     {
-      "id": 3,
-      "type": "car",
       "brand": "Kia",
       "model": "Sorento",
       "year": "2019",

@@ -1,6 +1,7 @@
 {
   "vehicles": [
     {
+      "id": 1,
       "brand": "Toyota",
       "model": "Camry",
       "year": "2013",
@@ -14,6 +15,7 @@
       "email": "charles@gmail.com"
     },
     {
+      "id": 2,
       "brand": "Tesla",
       "model": "Model",
       "year": "2020",
@@ -27,6 +29,7 @@
       "email": "brandon@gmail.com"
     },
     {
+      "id": 3,
       "brand": "Audi",
       "model": "Q5",
       "year": "2019",
@@ -40,6 +43,7 @@
       "email": "kylie@gmail.com"
     },
     {
+      "id": 4,
       "brand": "Kia",
       "model": "Sorento",
       "year": "2019",
@@ -50,7 +54,8 @@
       "description": "The 2020 Kia Sorento is a seven-seat SUV that is available in five trim levels: L, LX, S, EX Sport and SX. The L and the LX are reasonably well equipped, while the S and the EX add more convenience features. The SX trims top the range with more luxury-oriented features.",
       "name": "Misty Darret",
       "phone": "505-512-9990",
-      "email": "misty@gmail.com"}
+      "email": "misty@gmail.com"
+    }
   ]
 }
 
