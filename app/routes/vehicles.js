@@ -10,6 +10,7 @@ export default class IndexRoute extends Route {
   }
 }
 /*
+
 import Ember from 'ember';
 
 export default Ember.Route.extend({
@@ -17,5 +18,6 @@ export default Ember.Route.extend({
 		return this.store.findAll('vehicle');
 	}
 });
-
 */
+
+

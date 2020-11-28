@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@ember-data/adapter": "^3.22.1",
+    "@ember-data/model": "^3.22.1",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.1.0",
     "@glimmer/component": "^1.0.2",
@@ -37,8 +38,8 @@
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-htmlbars": "^5.3.1",
     "ember-cli-inject-live-reload": "^2.0.2",
-    "ember-cli-sri": "^2.1.1",
     "ember-cli-shims": "^1.2.0",
+    "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.0",
     "ember-data": "~3.22.0",
     "ember-export-application-global": "^2.0.1",
@@ -64,7 +65,9 @@
     "edition": "octane"
   },
   "dependencies": {
+    "@ember-data/serializer": "^3.22.1",
     "@types/ember__controller": "^3.16.4",
-    "@types/ember__routing": "^3.16.9"
+    "@types/ember__routing": "^3.16.9",
+    "fetch": "^1.1.0"
   }
 }

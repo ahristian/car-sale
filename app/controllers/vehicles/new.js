@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions:{
     submitCar: function() {
-      let newCar = this.store.createRecord('vehicle',{
+      let newVehicle = this.store.createRecord('vehicle',{
         id: this.get('id'),
         brand: this.get('brand'),
         model: this.get('model'),
@@ -17,6 +17,7 @@ export default Ember.Controller.extend({
         email: this.get('email'),
         phone: this.get('phone')
       });
-      newCar.save();
+      console.log(newVehicle);
+      newVehicle.save();
     }}
 });
