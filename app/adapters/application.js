@@ -1,7 +1,7 @@
-import JSONAPIAdapter from '@ember-data/adapter/json-api';
+import FirestoreAdapter from 'emberfire/adapters/firestore';
 
-export default class ApplicationAdapter extends JSONAPIAdapter {
-  namespace = 'vehicles.json'
-  shouldReloadAll(){return true;}
-}
-
+export default FirestoreAdapter.extend({
+    // Uncomment the following lines to enable offline persistence and multi-tab support
+    // enablePersistence: true,
+    // persistenceSettings: { synchronizeTabs: true }
+});
