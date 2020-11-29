@@ -3,9 +3,7 @@
 module.exports = function (environment) {
   let ENV = {
       modulePrefix: 'car-sale',
-    environment: environment,
-    /*contentSecurityPolicy:{'connect-src': "'self' wss://!*.firebaseio.com"},
-    firebase: 'https://car-sale-261c7.firebaseio.com',*/
+      environment: environment,
       rootURL: '/',
       locationType: 'auto',
       EmberENV: {
@@ -18,9 +16,17 @@ module.exports = function (environment) {
           // Prevent Ember Data from overriding Date.parse.
           Date: false
         }
-      }
-      ,
-
+      },
+      firebase: {
+        apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
+        authDomain: "car-data-e6872.firebaseapp.com",
+        databaseURL: "https://car-data-e6872.firebaseio.com",
+        projectId: "car-data-e6872",
+        storageBucket: "car-data-e6872.appspot.com",
+        messagingSenderId: "802110786936",
+        appId: "1:802110786936:web:2cb98b60abeab82c11cc8d",
+        measurementId: "G-TVY7Q21R1B"
+      },
       APP: {
         // Here you can pass flags/options to your application instance
         // when it is created
