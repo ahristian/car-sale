@@ -13,6 +13,11 @@
             <span class="input-group-text">Car Brand:</span>
           </div>
           {{input type="text" value=brand class="form-control"}}
+          {{#if (v-get vehicles 'description' 'isInvalid')}}
+          <div class="text-danger">
+          {{v-get vehicles 'description' 'message'}}
+          </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -20,6 +25,11 @@
             <span class="input-group-text">Car Model:</span>
           </div>
           {{input type="text" value=model class="form-control"}}
+          {{#if (v-get vehicles 'model' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'model' 'message'}}
+            </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -27,6 +37,11 @@
             <span class="input-group-text">Car Year:</span>
           </div>
           {{input type="number" value=year class="form-control"}}
+          {{#if (v-get vehicles 'year' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'year' 'message'}}
+            </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -34,6 +49,11 @@
             <span class="input-group-text">Car Mileage (miles):</span>
           </div>
           {{input type="number" value=mileage class="form-control"}}
+          {{#if (v-get vehicles 'number' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'number' 'message'}}
+            </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -41,18 +61,35 @@
             <span class="input-group-text">Car Color:</span>
           </div>
           {{input type="text" value=color class="form-control"}}
+          {{#if (v-get vehicles 'color' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'color' 'message'}}
+            </div>
+          {{/if}}
         </div>
+
         <div class="input-group mt-4">
           <div class="input-group-prepend">
             <span class="input-group-text">Car Image link:</span>
           </div>
           {{input type="link" value=image class="form-control"}}
+          {{#if (v-get vehicles 'image' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'image' 'message'}}
+            </div>
+          {{/if}}
         </div>
+
         <div class="input-group mt-4">
           <div class="input-group-prepend">
             <span class="input-group-text">Car Price: $</span>
           </div>
           {{input type="number" value=price class="form-control"}}
+          {{#if (v-get vehicles 'price' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'price' 'message'}}
+            </div>
+          {{/if}}
         </div>
       </div>
 
@@ -60,12 +97,23 @@
         <div class="mt-4">
           <span class="input-group-text">Car Description:</span>
           {{textarea type="text" value=description class="form-control" rows="6"}}
+          {{#if (v-get vehicles 'description' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'description' 'message'}}
+            </div>
+          {{/if}}
         </div>
+
         <div class="input-group mt-4">
           <div class="input-group-prepend">
             <span class="input-group-text">Your Name: </span>
           </div>
           {{input type="text" value=name class="form-control"}}
+          {{#if (v-get vehicles 'name' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'name' 'message'}}
+            </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -73,6 +121,11 @@
             <span class="input-group-text">Your Email:</span>
           </div>
           {{input type="email" value=email class="form-control"}}
+          {{#if (v-get vehicles 'email' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'email' 'message'}}
+            </div>
+          {{/if}}
         </div>
 
         <div class="input-group mt-4">
@@ -80,6 +133,11 @@
             <span class="input-group-text">Your Phone:</span>
           </div>
           {{input type="number" value=phone class="form-control"}}
+          {{#if (v-get vehicles 'phone' 'isInvalid')}}
+            <div class="text-danger">
+              {{v-get vehicles 'phone' 'message'}}
+            </div>
+          {{/if}}
         </div>
       </div>
     </div>
