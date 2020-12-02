@@ -1,4 +1,3 @@
-
 <div class="cars">
   <div class="container-fluid other-pages-background">
     <div class="row">
@@ -11,7 +10,17 @@
     <div class="car-items">
       <ul class="results">
         {{#each @model as |vehicle|}}
-          <li><Vehicle @vehicle={{vehicle}} /></li>
+          <li>
+            <Vehicle @vehicle={{vehicle}} />
+          </li>
+          <div class="row my-2 a">
+            <div class="col-md-1 mx-2 text-right">
+              <button {{action 'updateCarItem' vehicle}} type="button" class="btn btn-info">Update</button>
+            </div>
+            <div class="col-md-1 mx-2 text-right">
+              <button {{action 'deleteCarItem' vehicle}} type="button" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
         {{/each}}
       </ul>
     </div>
