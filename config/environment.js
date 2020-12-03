@@ -2,10 +2,10 @@
 
 module.exports = function (environment) {
   let ENV = {
-      modulePrefix: 'car-sale',
-      environment: environment,
-      rootURL: '/',
-      locationType: 'auto',
+    modulePrefix: 'car-sale',
+    environment: environment,
+    rootURL: '/',
+    locationType: 'auto',
       EmberENV: {
         FEATURES: {
           // Here you can enable experimental features on an ember canary build
@@ -32,9 +32,11 @@ module.exports = function (environment) {
         // when it is created
       }
     }
-  ;
+    ;
 
-  if (environment === 'development') {
+    if (environment === 'development'
+)
+  {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -62,4 +64,4 @@ module.exports = function (environment) {
 
   return ENV;
 }
-;
+  ;
