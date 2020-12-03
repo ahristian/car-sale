@@ -25,16 +25,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb654688-27a9-4970-b796-f5077e94c396" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/update-car.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/vehicles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/vehicle/update-car.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/paragraph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/footer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/nav-bar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/nav-bar.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/vehicle.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/vehicle.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/new-car.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/new-car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/new-car.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/update-car.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/vehicles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/vehicles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/vehicle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/vehicles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/vehicles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/new-car.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/vehicle/update-car.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/vehicles.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/vehicles.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/controllers/vehicles/new-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/controllers/vehicles/new-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/routes/vehicles-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/routes/vehicles-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/routes/vehicles/new-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/routes/vehicles/new-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -73,9 +80,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\components" />
+      <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\templates" />
+      <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\templates\vehicles" />
       <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\templates\vehicle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\components" />
       <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\controllers" />
       <recent name="C:\Users\User\Desktop\bootcamp\git\ember-app\car-sale\app\templates" />
     </key>
@@ -93,7 +104,8 @@
       <workItem from="1606584736333" duration="512000" />
       <workItem from="1606710970844" duration="973000" />
       <workItem from="1606756991297" duration="1084000" />
-      <workItem from="1606886317196" duration="3979000" />
+      <workItem from="1606886317196" duration="25028000" />
+      <workItem from="1607011169394" duration="911000" />
     </task>
     <servers />
   </component>
@@ -117,9 +129,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606584900123" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1606889245914">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606970706708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606889245914" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606970706708" />
   </component>
 </project>

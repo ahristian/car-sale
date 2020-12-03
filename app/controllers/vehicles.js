@@ -6,12 +6,12 @@ export default Ember.Controller.extend({
     deleteCarItem(vehicle){
       vehicle.destroyRecord();
     },
-    updateCarItem(vehicle){
-      let newInfoCar = this.store.peekRecord('vehicle', vehicle.id);
-      newInfoCar.set('description', 'text');
-      newInfoCar.set('brand', 'Lexus',);
 
-      newInfoCar.save();
+    addCar () {
+      this.get('store').createRecord('vehicle');
+    },
+    saveCarItem(vehicle) {
+      vehicle.save();
     }
   }
 
