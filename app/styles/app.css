@@ -23,14 +23,16 @@ button {
   line-height: 1.5;
 }
 
+.btn-sell {
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
 a {
   color: #016aba;
   text-decoration: none;
 }
 
-button {
-  font-size: 100%;
-}
 
 p {
   line-height: 1.5;
@@ -72,7 +74,7 @@ p {
 
 /************* Index page ************/
 .index-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),url(../assets/images/tesla-model3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/images/tesla-model3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +105,7 @@ p {
 }
 
 .other-pages-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)),url(../assets/images/library-abq.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../assets/images/library-abq.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

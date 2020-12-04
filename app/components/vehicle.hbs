@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md text-center">
       <h3>
-      {{@vehicle.brand}} {{@vehicle.model}} for {{@vehicle.price}}
+      {{@vehicle.brand}} {{@vehicle.model}} for ${{@vehicle.price}}
       </h3>
     </div>
   </div>
@@ -27,13 +27,13 @@
       </div>
       <div class="row my-1">
         <div class="col-md-4 detail mileage">
-          <span>Mileage:</span> {{@vehicle.mileage}}
+          <span>Mileage:</span> {{@vehicle.mileage}}miles
         </div>
         <div class="col-md-4 detail color">
           <span>Color:</span> {{@vehicle.color}}
         </div>
         <div class="col-md-4 detail price">
-          <span>Price:</span> {{@vehicle.price}}
+          <span>Price:</span> ${{@vehicle.price}}
         </div>
       </div>
       <div class="row my-1">
@@ -42,18 +42,19 @@
         </div>
       </div>
       <div class="row my-3">
-        <div class="col-md-4 detail mileage">
+        <div class="col detail mileage">
           <span>Contact:</span> {{@vehicle.name}}
         </div>
-        <div class="col-md-4 detail color">x
+        </div>
+      <div class="row my-3">
+        <div class="col detail color">
           <span>Phone:</span> {{@vehicle.phone}}
         </div>
-        <div class="col-md-4 detail price">
+        </div>
+      <div class="row my-3">
+        <div class="col detail price">
           <span>Email:</span> {{@vehicle.email}}
         </div>
-      </div>
-      <div class="row my-3">
-        <button {{action 'deleteCarItem' vehicle}} type="button" class="btn btn-danger">Delete</button>
       </div>
     </div>
   </div>
