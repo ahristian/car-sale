@@ -53,11 +53,13 @@ p {
   font-weight: bold;
   opacity: 0.9;
   display: inline-block;
+
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-.button:hover {
-  opacity: 1;
-}
 
 /*** Top Navigation */
 

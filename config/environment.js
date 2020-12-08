@@ -17,6 +17,7 @@ module.exports = function (environment) {
           Date: false
         }
       },
+
       firebase: {
         apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
         authDomain: "car-data-e6872.firebaseapp.com",

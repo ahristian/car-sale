@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import firebase from 'firebase/app';
 
+
 export default Route.extend({
   session: service(),
   firebaseApp: service(),
