@@ -1,19 +1,24 @@
-import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
-import firebase from 'firebase/app';
+import Ember from 'ember';
 
 
-export default Route.extend({
-  session: service(),
-  firebaseApp: service(),
+export default Ember.Route.extend({
   actions: {
-    logout() {
-      return this.get('session').invalidate();
+    login: function() {
+      var controller = this.get('controller');
+      var email = controller.get('userEmail');
+      var password = controller.get('userPassword');
+      this.get('session').open('firebase', {
+        provider: 'password',
+        email: email,
+        password: password
+      }).then(function() {
+        this.transitionTo('protected');
+      }.bind(this));
     },
-    async login() {
-      const auth = await this.get('firebaseApp').auth();
-      const provider = new firebase.auth.GoogleAuthProvider();
-      return auth.signInWithPopup(provider);
+    logout: function() {
+      this.get('session').close().then(function() {
+        this.transitionTo('application');
+      }.bind(this));
     }
   }
 });

@@ -1,8 +1,13 @@
 <NavBar/>
 
-Logged in as {{ session.data.authenticated.user.displayName }}
-<button {{action "logout"}}>Sign out</button>
-<button {{action "login"}}>Sign in with Google</button>
+<h2 id="title">Authentication Starter Project</h2>
+{{#if session.isAuthenticated}}
+  <button {{action 'logout'}}>Logout</button>
+{{else}}
+  {{input type="text" value=userEmail placeholder="Email"}}<br>
+  {{input type="password" value=userPassword placeholder="Password"}}<br>
+  <button {{action "login"}}> Login </button>
+{{/if}}
 {{outlet}}
 
 
