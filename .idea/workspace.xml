@@ -26,7 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb654688-27a9-4970-b796-f5077e94c396" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/vehicles.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/vehicles.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/application.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/application.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ember-cli-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/ember-cli-build.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="post-feature" />
+        <entry key="$PROJECT_DIR$" value="auth-tori" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
