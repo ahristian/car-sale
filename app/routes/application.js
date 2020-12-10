@@ -13,7 +13,6 @@ export default Route.extend({
       const auth = await this.get('firebaseApp').auth();
       const provider = new firebase.auth.GoogleAuthProvider();
       return auth.signInWithPopup(provider);
-
     }
   }
 });
