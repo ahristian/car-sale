@@ -2,23 +2,21 @@ import Ember from 'ember';
 
 
 export default Ember.Route.extend({
+  session: Ember.inject.service(),
+  beforeModel() {
+    return this.get('session').fetch().catch(function () {
+    });
+  },
   actions: {
-    login: function() {
-      var controller = this.get('controller');
-      var email = controller.get('userEmail');
-      var password = controller.get('userPassword');
-      this.get('session').open('firebase', {
-        provider: 'password',
-        email: email,
-        password: password
-      }).then(function() {
-        this.transitionTo('protected');
-      }.bind(this));
+    singIn: function(provider) {
+      this.get('session').open("firebase", {
+        provider: provider,
+      }).then(function(data) {
+        console.log(data.currentUser);
+      });
     },
-    logout: function() {
-      this.get('session').close().then(function() {
-        this.transitionTo('application');
-      }.bind(this));
+    signOut() {
+      this.get('session').close();
     }
   }
 });

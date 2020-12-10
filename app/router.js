@@ -10,5 +10,4 @@ Router.map(function () {
   this.route('about');
   this.route('contact');
   this.route('vehicles');
-  this.route('protected');
 });

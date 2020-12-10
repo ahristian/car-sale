@@ -1,8 +1,7 @@
-import Ember from 'ember';
-import FirebaseAdapter from 'emberfire/adapters/firebase';
+import FirestoreAdapter from 'emberfire/adapters/firestore';
 
-const { inject } = Ember;
-
-export default FirebaseAdapter.extend({
-  firebase: inject.service(),
+export default FirestoreAdapter.extend({
+    // Uncomment the following lines to enable offline persistence and multi-tab support
+    // enablePersistence: true,
+    // persistenceSettings: { synchronizeTabs: true }
 });
