@@ -12,7 +12,9 @@ export default Route.extend({
     async login() {
       const auth = await this.get('firebaseApp').auth();
       const provider = new firebase.auth.GoogleAuthProvider();
-      return auth.signInWithPopup(provider);
+      return auth.signInWithPopup(provider).then(()=> {
+        this.transitionTo('vehicles');
+      });
     }
   }
 });

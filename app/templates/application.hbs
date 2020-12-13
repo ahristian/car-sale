@@ -2,7 +2,7 @@
 <div class="container-fluid bg-secondary">
   <div class="row">
     <div class="col">
-      <button class="btn btn-light btn-lg btn-block">Logged in as {{ session-store.data.authenticated.user.displayName }}
+      <button class="btn btn-light btn-lg btn-block">Logged in as {{ session.main.data.authenticated.user.displayName }}
       </button>
     </div>
     <div class="col">
@@ -12,7 +12,7 @@
 
       <button class="btn btn-light btn-lg btn-block" {{action "login"}}>Sign in with Google</button>
     </div>
-{{#if session.isAuthenticated}}
+{{#if this.session.isAuthenticated}}
   works
   {{/if}}
   </div>
