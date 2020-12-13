@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
 
   });
-app.import('bower_components/bootstrap/dist/css/bootstrap.min');
+//app.import('bower_components/bootstrap/dist/css/bootstrap.min');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
