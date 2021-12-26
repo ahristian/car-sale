@@ -1,9 +1,10 @@
-
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
-export default Route.extend({
+export default class VehicleRoute extends Route {
+  @service store;
 
-  // model: function () {
-  //   return this.get('store').findAll('vehicle');
-  // }
-});
+  model() {
+    return this.store.findAll('vehicle');
+  }
+}

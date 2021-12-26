@@ -17,6 +17,9 @@ module.exports = function (environment) {
         Date: false
       }
     },
+    fontawesome: {
+      defaultPrefix: 'fab', // light icons
+    },
     firebaseConfig: {
       apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
       authDomain: "car-data-e6872.firebaseapp.com",
