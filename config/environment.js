@@ -20,14 +20,30 @@ module.exports = function (environment) {
     fontawesome: {
       defaultPrefix: 'fab', // light icons
     },
-    firebaseConfig: {
-      apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
-      authDomain: "car-data-e6872.firebaseapp.com",
-      databaseURL: "https://car-data-e6872.firebaseio.com",
-      projectId: "car-data-e6872",
-      storageBucket: "car-data-e6872.appspot.com",
-      messagingSenderId: "802110786936",
-      appId: "1:802110786936:web:2cb98b60abeab82c11cc8d"
+    'ember-cloud-firestore-adapter': {
+      firebaseConfig: {
+        apiKey: 'AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw',
+        authDomain: 'car-data-e6872.firebaseapp.com',
+        databaseURL: 'https://car-data-e6872.firebaseio.com',
+        projectId: 'car-data-e6872',
+        storageBucket: 'car-data-e6872.appspot.com',
+        messagingSenderId: '802110786936',
+        appId: '1:802110786936:web:2cb98b60abeab82c11cc8d'
+      },
+
+      firestore: {
+        emulator: {
+          hostname: 'localhost',
+          port: 8080,
+        },
+      },
+
+      auth: {
+        emulator: {
+          hostname: 'localhost',
+          port: 9099,
+        },
+      },
     },
     APP: {
       // Here you can pass flags/options to your application instance
