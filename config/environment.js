@@ -6,37 +6,36 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-      EmberENV: {
-        FEATURES: {
-          // Here you can enable experimental features on an ember canary build
-          // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
-        }
-        ,
-        EXTEND_PROTOTYPES: {
-          // Prevent Ember Data from overriding Date.parse.
-          Date: false
-        }
-      },
-      firebase: {
-        apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
-        authDomain: "car-data-e6872.firebaseapp.com",
-        databaseURL: "https://car-data-e6872.firebaseio.com",
-        projectId: "car-data-e6872",
-        storageBucket: "car-data-e6872.appspot.com",
-        messagingSenderId: "802110786936",
-        appId: "1:802110786936:web:2cb98b60abeab82c11cc8d",
-        measurementId: "G-TVY7Q21R1B"
-      },
-      APP: {
-        // Here you can pass flags/options to your application instance
-        // when it is created
+    EmberENV: {
+      FEATURES: {
+        // Here you can enable experimental features on an ember canary build
+        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       }
+      ,
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
+      }
+    },
+    firebase: {
+      apiKey: "AIzaSyDkTLEiIRq_P0g6GNFWVLZOs5NgOVxJtWU",
+      authDomain: "car-sale-firestore.firebaseapp.com",
+      databaseURL: "https://car-sale-firestore-default-rtdb.firebaseio.com",
+      projectId: "car-sale-firestore",
+      storageBucket: "car-sale-firestore.appspot.com",
+      messagingSenderId: "874184664700",
+      appId: "1:874184664700:web:211f4880bd574469a60bf9",
+      measurementId: "G-64QT94VBQS"
+    },
+    APP: {
+      // Here you can pass flags/options to your application instance
+      // when it is created
     }
+  }
     ;
 
-    if (environment === 'development'
-)
-  {
+  if (environment === 'development'
+  ) {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
