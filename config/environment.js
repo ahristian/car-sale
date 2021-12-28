@@ -17,17 +17,15 @@ module.exports = function (environment) {
         Date: false
       }
     },
-    fontawesome: {
-      defaultPrefix: 'fab', // light icons
-    },
-    firebaseConfig: {
-      apiKey: "AIzaSyBwThZCCa-nsTbX0YrAZUic3nSBXLuRMrw",
-      authDomain: "car-data-e6872.firebaseapp.com",
-      databaseURL: "https://car-data-e6872.firebaseio.com",
-      projectId: "car-data-e6872",
-      storageBucket: "car-data-e6872.appspot.com",
-      messagingSenderId: "802110786936",
-      appId: "1:802110786936:web:2cb98b60abeab82c11cc8d"
+    firebase: {
+      apiKey: "AIzaSyDkTLEiIRq_P0g6GNFWVLZOs5NgOVxJtWU",
+      authDomain: "car-sale-firestore.firebaseapp.com",
+      databaseURL: "https://car-sale-firestore-default-rtdb.firebaseio.com",
+      projectId: "car-sale-firestore",
+      storageBucket: "car-sale-firestore.appspot.com",
+      messagingSenderId: "874184664700",
+      appId: "1:874184664700:web:211f4880bd574469a60bf9",
+      measurementId: "G-64QT94VBQS"
     },
     APP: {
       // Here you can pass flags/options to your application instance
